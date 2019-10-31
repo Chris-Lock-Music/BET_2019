@@ -9396,9 +9396,9 @@
 , 							{
 								"name" : "helpfile_label-1",
 								"default" : 								{
+									"fontsize" : [ 13.0 ],
 									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 13.0 ]
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -9443,8 +9443,8 @@
 , 							{
 								"name" : "newobjBlue-1",
 								"default" : 								{
-									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9507,8 +9507,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9580,8 +9580,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9590,8 +9590,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9643,11 +9643,11 @@
 					"patching_rect" : [ 1431.287262000000055, 602.529236000000083, 36.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "toggle",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 1,
 							"parameter_longname" : "toggle",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "toggle"
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9773,7 +9773,6 @@
 					"allowdrag" : 0,
 					"bgcolor" : [ 0.078431, 0.078431, 0.078431, 1.0 ],
 					"buffername" : "polysampler_buffer",
-					"chanoffset" : 0,
 					"id" : "obj-313",
 					"ignoreclick" : 1,
 					"maxclass" : "waveform~",
@@ -9851,11 +9850,11 @@
 					"presentation_rect" : [ 159.857077999999774, 344.335644000000002, 36.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "toggle",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 1,
 							"parameter_longname" : "toggle[1]",
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "toggle"
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -10429,7 +10428,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-133", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-136", 0 ]
 				}
 
@@ -10437,14 +10436,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-140", 0 ],
-					"order" : 0,
-					"source" : [ "obj-136", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
 					"order" : 1,
 					"source" : [ "obj-136", 0 ]
 				}
@@ -10452,8 +10443,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
+					"destination" : [ "obj-141", 0 ],
 					"order" : 2,
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"order" : 3,
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
 					"source" : [ "obj-136", 0 ]
 				}
 
@@ -11818,7 +11825,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
-					"order" : 6,
+					"order" : 7,
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -11874,7 +11881,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-93", 0 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -12417,10 +12424,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-127::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
-			"obj-9::obj-43" : [ "live.grid[2]", "live.grid", 0 ],
 			"obj-112" : [ "toggle", "toggle", 0 ],
 			"obj-58" : [ "toggle[1]", "toggle", 0 ],
+			"obj-127::obj-46::obj-2" : [ "live.grid[4]", "live.grid", 0 ],
+			"obj-9::obj-43" : [ "live.grid[2]", "live.grid", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -12636,9 +12643,9 @@
 , 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
+					"fontsize" : [ 13.0 ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-					"fontname" : [ "Arial" ],
-					"fontsize" : [ 13.0 ]
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -12683,8 +12690,8 @@
 , 			{
 				"name" : "newobjBlue-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12747,8 +12754,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12820,8 +12827,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -12830,8 +12837,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
